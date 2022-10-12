@@ -1,0 +1,29 @@
+@use "../abstract/variables" as *;
+
+.page-header{
+    background-color: $Clightblue;
+}
+
+.header-wrapper{
+    margin: 0 2em 0 2em;
+}
+
+.header-container{
+    padding: 3em 0 0 0;
+}
+
+.join-btn{
+    margin: 4em 1em 0em 1em;
+    background-color: #fff;
+    padding: 1.2em 4em;
+    border-radius: 9999px;
+    box-shadow: .1em .1em .2em;
+    border: none;
+    
+}
+
+.img-family{
+    margin-top: 3em;
+    margin-left: 1em;
+    width: 100%;
+}

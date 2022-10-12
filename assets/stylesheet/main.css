@@ -1,0 +1,153 @@
+.page-wrapper {
+  width: 100%;
+}
+
+.page-info {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.page-info .info-header .info-text,
+.page-info .info-header .info-title {
+  padding: 1em 0 0 1em;
+}
+.page-info .info-header .info-join-btn {
+  display: none;
+}
+.page-info .info-header .info-title {
+  color: #fff;
+}
+
+.page-about-us,
+.page-cards,
+.info-header {
+  flex: 0 0 100%;
+}
+
+.page-about-us {
+  background-color: #FAB131;
+}
+
+.page-cards,
+.info-header {
+  background-color: #A9A19E;
+}
+
+.page-cards {
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5em auto;
+  background-color: #fff;
+  width: 75%;
+  border-radius: 5%;
+  box-shadow: 0 0 20px grey;
+  text-align: center;
+}
+.card .card-img {
+  display: block;
+  position: relative;
+  margin: -2em auto 0 auto;
+  background-color: #C7DDEA;
+  width: 90%;
+  height: 12em;
+  border-radius: 5%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+.card .card-title {
+  margin: 1em auto;
+}
+.card .card-text {
+  margin: 0 2em 2em 2em;
+  opacity: 0.6;
+}
+
+.page-cards .card:nth-child(1) .card-img {
+  -o-object-position: 0 -50px;
+     object-position: 0 -50px;
+}
+.page-cards .card:nth-child(2) .card-img {
+  background-color: #FAB131;
+  -o-object-position: 0 -80px;
+     object-position: 0 -80px;
+}
+.page-cards .card:nth-child(3) .card-img {
+  background-color: #F17949;
+}
+
+.page-about-us {
+  text-align: center;
+}
+.page-about-us .about-title {
+  margin-top: 2em;
+  color: #fff;
+}
+.page-about-us .subheadline {
+  margin: 2em;
+}
+
+.page-header {
+  background-color: #C7DDEA;
+}
+
+.header-wrapper {
+  margin: 0 2em 0 2em;
+}
+
+.header-container {
+  padding: 3em 0 0 0;
+}
+
+.join-btn {
+  margin: 4em 1em 0em 1em;
+  background-color: #fff;
+  padding: 1.2em 4em;
+  border-radius: 9999px;
+  box-shadow: 0.1em 0.1em 0.2em;
+  border: none;
+}
+
+.img-family {
+  margin-top: 3em;
+  margin-left: 1em;
+  width: 100%;
+}
+
+.headline {
+  font-size: 3rem;
+}
+
+.subheadline {
+  letter-spacing: 0.02em;
+  line-height: 1.5em;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  color: rgba(54, 54, 54, 0.781);
+}
+
+.subheadline span {
+  color: #fff;
+}
+
+.join-btn {
+  font-size: 0.7rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Frank Ruhl Libre", serif;
+}/*# sourceMappingURL=main.css.map */

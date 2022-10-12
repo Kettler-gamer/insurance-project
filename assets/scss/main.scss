@@ -1,0 +1,17 @@
+@use "pages/landing-page";
+
+@use "layout/header-page";
+
+@use "text/text";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Frank Ruhl Libre', serif;
+
+}

@@ -1,0 +1,112 @@
+@use "../abstract/variables" as *;
+
+.page-wrapper{
+    width: 100%;
+}
+
+.page-info{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    
+    .info-header{
+        .info-text,
+        .info-title{
+            padding: 1em 0 0 1em;
+        }
+
+        .info-join-btn{
+            display: none;
+        }
+
+        .info-title{
+            color: #fff;
+        }
+    }
+}
+
+.page-about-us,
+.page-cards,
+.info-header{
+    flex: 0 0 100%;
+}
+
+.page-about-us{
+    background-color: $Cyellow;
+}
+
+.page-cards,
+.info-header{
+    background-color: $Cgrey;
+}
+
+.page-cards{
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5em auto;
+    background-color: #fff;
+    width: 75%;
+    border-radius: 5%;
+    box-shadow: 0 0 20px grey;
+    text-align: center;
+
+    .card-img{
+        display: block;
+        position: relative;
+        margin: -2em auto 0 auto;
+        background-color: $Clightblue;
+        width: 90%;
+        height: 12em;
+        border-radius: 5%;
+        object-fit: cover;
+        object-position: 0 0;
+    }
+
+    .card-title{
+        margin: 1em auto;
+    }
+
+    .card-text{
+        margin: 0 2em 2em 2em;
+        opacity: 0.6;
+    }
+}
+
+.page-cards{
+    .card:nth-child(1){
+        .card-img{
+            object-position: 0 -50px;
+        }
+    }
+    .card:nth-child(2){
+        .card-img{
+            background-color: $Cyellow;
+            object-position: 0 -80px;
+        }
+    }
+    .card:nth-child(3){
+        .card-img{
+            background-color: $Corange;
+        }
+    }
+}
+
+.page-about-us{
+    text-align: center;
+    .about-title{
+        margin-top: 2em;
+        color: #fff;
+    }
+
+    .subheadline{
+        margin: 2em;
+    }
+}
+
+// .page-info{
+//     background-image: linear-gradient(to bottom, grey 0%, grey 49.9%,orange 50%, orange 100%);
+// }
