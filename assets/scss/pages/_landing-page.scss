@@ -10,9 +10,12 @@
     text-align: left;
     
     .info-header{
-        .info-text,
         .info-title{
-            padding: 1em 0 0 1em;
+            margin: 0.8em auto 0.8em 0.05em;
+            line-height: 1.7ch;
+        }
+        .info-text{
+            margin: 0.5em 0.7em;
         }
 
         .info-join-btn{
@@ -54,16 +57,20 @@
     box-shadow: 0 0 20px grey;
     text-align: center;
 
-    .card-img{
-        display: block;
-        position: relative;
-        margin: -2em auto 0 auto;
-        background-color: $Clightblue;
+    .card-img-container{
         width: 90%;
-        height: 12em;
-        border-radius: 5%;
-        object-fit: cover;
-        object-position: 0 0;
+        height: 10em;
+        margin: -2em auto 2em auto;
+        border-radius: 2%;
+        background-color: $Cyellow;
+        overflow: hidden;
+        .card-img{
+            display: block;
+            background-color: transparent;
+            width: 40%;
+            padding-top: 0.5em;
+            margin: auto auto -2em auto;
+        }
     }
 
     .card-title{
@@ -76,37 +83,218 @@
     }
 }
 
-.page-cards{
-    .card:nth-child(1){
-        .card-img{
-            object-position: 0 -50px;
-        }
-    }
-    .card:nth-child(2){
-        .card-img{
-            background-color: $Cyellow;
-            object-position: 0 -80px;
-        }
-    }
-    .card:nth-child(3){
-        .card-img{
-            background-color: $Corange;
-        }
-    }
+.card:nth-child(1) .card-img-container{
+    background-color: $Clightblue;
+}
+
+.card:nth-child(3) .card-img-container{
+    background-color: $Corange;
 }
 
 .page-about-us{
     text-align: center;
     .about-title{
-        margin-top: 2em;
+        margin-top: 0.8em;
         color: #fff;
     }
 
     .subheadline{
         margin: 2em;
     }
+
+    .subheadline:last-child{
+        margin-bottom: 5em;
+    }
 }
 
-// .page-info{
-//     background-image: linear-gradient(to bottom, grey 0%, grey 49.9%,orange 50%, orange 100%);
-// }
+.page-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    .box{
+        display: flex;
+        flex: 0 0 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 9em;
+        .box-text{
+            text-align: center;
+            margin: 1em auto 2em auto;
+            width: 70%;
+        }
+    }
+    
+    .box:first-child{
+        background-color: $Clightblue;
+        .box-title{
+            text-align: center;
+            margin: auto 0;
+            width: 50%;
+        }
+    }
+
+    .box:not(:first-child){
+        .box-title{
+            align-self: flex-start;
+            margin: 0.5em auto 0 0.5em;
+            color: #747474;
+        }
+    }
+
+    .box:nth-child(3){
+        background-color: #f6f6f6;
+        .box-text:nth-child(2){
+            margin-bottom: 0;
+        }
+        .box-text:last-child{
+            margin-top: 0;
+        }
+    }
+
+    .box:nth-child(5){
+        background-color: $Corange;
+    }
+}
+
+.page-footer{
+    background-color: $Cgrey;
+    height: 10em;
+    margin-bottom: 2em;
+    .take-me-up{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .page-wrapper{
+        width: 100%;
+        .page-info{
+            background-image: linear-gradient(to bottom, grey 0%, grey 49.9%,orange 50%, orange 100%);
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items:center;
+            .info-header{
+                background-color: transparent;
+                display: flex;
+                width: 100%;
+                margin: 5em auto 0 auto;
+                
+                .info-container{
+                    margin: 5em auto 2em 15%;
+                    flex: 0 0 30%;
+
+                    .info-title{
+                        width: 100%;
+                        margin-top: 0;
+                    }
+                    .info-join-btn{
+                        display:block;
+                        width: fit-content;
+                        background-color: #fff;
+                        margin: 6em 0 0 1.5em;
+                        padding: 1.2em 4em;
+                        border-radius: 9999px;
+                        box-shadow: .1em .1em .2em;
+                        border: none;
+                    }
+                }
+                
+                .info-text{
+                    flex: 0 0 30%;
+                    font-size: 1rem;
+                    margin: 5.5em 15% 2em auto;
+                    height: 278px;
+                }
+            }
+
+            .page-cards{
+                background-color: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10em;
+                .card{
+                    flex: 0 0 25%;
+                    width: 33%;
+                    height: fit-content;
+                    align-self: center;
+                    margin: 0em 0.5em;
+
+                    .card-img-container{
+                        height: 13em;
+                        .card-img{
+                            padding: 1em 0 0 0;
+                            width: 33%;
+                        }
+                    }
+
+                    .card-title{
+                        margin: 0 auto 1em auto;
+                    }
+
+                    .card-text{
+                        margin: 0 auto 3em auto;
+                    }
+                }
+                .card:nth-child(3){
+                    .card-img-container{
+                        .card-img{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+
+            .page-about-us{
+                display: block;
+                width: 100%;
+                background-color: transparent;
+                margin: 0 auto;
+                *{
+                    margin: 1em auto;
+                }
+                .subheadline{
+                    width: 50%;
+                }
+                .subheadline:last-child{
+                    margin-bottom: 10em;
+                }
+            }
+        }
+        .page-boxes{
+            .box{
+                flex: 0 0 33%;
+                height: 20em;
+                .box-text{
+                    font-size: 1.5rem;
+                    margin: auto 0;
+                }
+            }
+        }
+
+        .page-footer{
+            padding-top: 1em;
+            .take-me-up{
+                display: block;
+                margin: 1em auto 0 auto;
+                border: none;
+                width: fit-content;
+                background-color: transparent;
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                p:first-child{
+                    font-size: 2rem;
+                    flex: 0 0 100%;
+                }
+
+                p{
+                    line-height: 1ch;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+}

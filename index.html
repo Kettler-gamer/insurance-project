@@ -23,6 +23,7 @@
     <header class="page-header">
       <div class="header-wrapper">
         <section class="header-container">
+          <div class="header-left">
           <h1 class="headline">We've got you covered.</h1>
           <p class="subheadline">
             Together we keep each other safe at home or at work. By paying a
@@ -34,15 +35,15 @@
           <img class="img-family" src="assets/images/family.png" alt="family" />
         </section>
         <section class="header-container">
-          <div class="header-subcontainer">
-            <!--Bestäm färg med first och last child-->
-            <p>What do we have to offer?</p>
-            <h2>Learn more</h2>
+          <div class="header-subcontainer subcontainer-orange">
+            <p class="subcontainer-paragraf">What do we have to offer?</p>
+            <h2 class="subcontainer-headline">Learn more</h2>
           </div>
-          <div class="header-subcontainer">
-            <p>What are you waiting for?</p>
-            <h2>Join today?</h2>
+          <div class="header-subcontainer subcontainer-yellow">
+            <p class="subcontainer-paragraf">What are you waiting for?</p>
+            <h2 class="subcontainer-headline">Join today?</h2>
           </div>
+        </div>
         </section>
       </div>
       <nav class="page-nav">
@@ -57,10 +58,12 @@
     <main class="page-wrapper">
       <section class="page-info">
         <header class="info-header">
-          <h2 class="info-title">Your personal financial safety net online.</h2>
-
-          <button class="info-join-btn">Join now</button>
-
+          <div class="info-container">
+            <h2 class="headline info-title">
+              Your personal financial safety net online.
+            </h2>
+            <button class="info-join-btn">Join now</button>
+          </div>
           <p class="subheadline info-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor
             ligula vel felis cursus egestas. Etiam consectetur finibus
@@ -72,7 +75,9 @@
         </header>
         <div class="page-cards">
           <div class="card">
-            <img class="card-img" src="assets/images/child.png" alt="child" />
+            <div class="card-img-container">
+              <img class="card-img" src="assets/images/child.png" alt="child" />
+            </div>
             <h3 class="card-title">Children</h3>
             <p class="subheadline card-text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
@@ -82,7 +87,9 @@
             </p>
           </div>
           <div class="card">
-            <img class="card-img" src="assets/images/adult.png" alt="woman" />
+            <div class="card-img-container">
+              <img class="card-img" src="assets/images/adult.png" alt="woman" />
+            </div>
             <h3 class="card-title">Just right</h3>
             <p class="subheadline card-text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
@@ -92,7 +99,9 @@
             </p>
           </div>
           <div class="card">
-            <img class="card-img" src="assets/images/old.png" alt="old man" />
+            <div class="card-img-container">
+              <img class="card-img" src="assets/images/old.png" alt="old man" />
+            </div>
             <h3 class="card-title">Old fart</h3>
             <p class="subheadline card-text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
@@ -103,7 +112,7 @@
           </div>
         </div>
         <article class="page-about-us">
-          <h2 class="about-title">About us</h2>
+          <h2 class="about-title headline">About us</h2>
           <p class="subheadline">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
             ultricies massa. Donec id malesuada magna. Pellentesque aliquet
@@ -127,7 +136,7 @@
 
       <section class="page-boxes">
         <div class="box">
-          <h1 class="box-title">How it works?</h1>
+          <h1 class="headline box-title">How it works?</h1>
         </div>
 
         <div class="box">
@@ -144,7 +153,7 @@
         <div class="box">
           <h2 class="box-title">03</h2>
           <p class="box-text">
-            Answe some questions about your medical history.
+            Answer some questions about your medical history.
           </p>
         </div>
 
@@ -159,10 +168,11 @@
         </div>
       </section>
       <footer class="page-footer">
-        <button>
+        <button class="take-me-up" onclick="scrolling()">
           <p>^</p>
           <p>Take me up again!</p>
         </button>
+        <script src="assets/scripts/scrollTop.js"></script>
       </footer>
     </main>
   </body>

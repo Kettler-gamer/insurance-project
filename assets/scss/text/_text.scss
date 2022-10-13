@@ -2,12 +2,15 @@
 
 .headline {
     font-size: 3rem;
+    padding: 0 0em 0 .3em;
 }
 
 
 .subheadline{
+    padding: 0 .8em 0 .8em;
+    font-size: .85rem;
     letter-spacing: .02em;
-    line-height: 1.5em;
+    line-height: 1.7em;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
     color: rgba(54, 54, 54, 0.781);
@@ -21,4 +24,46 @@
     font-size: .7rem;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 800;
+}
+
+.subcontainer-paragraf{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: .8rem;
+    color: rgba(61, 22, 0, 0.767) ;
+}
+
+.subcontainer-headline{
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+
+// Contact text
+
+.contact-headline{
+    font-size: 3rem;
+    margin-top: 1.5em;
+    width: 4em;
+    padding: 0 0em 0 .3em;
+}
+
+// Desktop home page
+
+@media screen and (min-width: 768px){
+ 
+    .headline {
+        font-size: 4rem;
+        padding: 0 0em 0 .3em;
+    }
+
+    .subheadline{
+        padding: 0 .8em 0 .8em;
+        font-size: 1.2em;
+        letter-spacing: .02em;
+        line-height: 1.7em;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 300;
+        color: rgba(54, 54, 54, 0.781);
+    }
+
 }
