@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="We are an insurance company focusing on low fees and full insurance." />
+    <meta
+      name="Keywords"
+      content="Insurance, fully insured, funding, financial safety, San Francisco, California, USA, Children, Elderly people, business plan" />
     <title>Insurance project</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -12,49 +19,69 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=
-      Fira+Sans:wght@500&display=swap&family=Frank+Ruhl+Libre:wght@500&display=swap&family=Fira+Sans:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;600;800&family=Frank+Ruhl+Libre:wght@500&display=swap"
       rel="stylesheet" />
 
     <link rel="stylesheet" href="assets/stylesheet/main.css" />
   </head>
   <body>
     <header class="page-header">
-      <div class="header-wrapper">
+      <div
+        class="header-wrapper"
+        itemscope
+        itemtype="https://schema.org/InsuranceAgency">
         <section class="header-container">
-          <div class="header-left">
-            <h1 class="headline">We've got you covered.</h1>
-            <p class="subheadline">
-              Together we keep each other safe at home or at work. By paying a
-              tiny fee a day, you are fully insured all day long. You get it all
-              for as little as <span>$0.4 per pay.</span>
-            </p>
+          <h1 class="headline">We've got you covered.</h1>
+          <p class="subheadline">
+            Together we keep each other safe at home or at work. By paying a
+            tiny fee a day, you are fully insured all day long. You get it all
+            for as little as <span>$0.4 per pay.</span>
+          </p>
 
-            <button name="join now" class="join-btn">JOIN NOW</button>
-            <img
-              class="img-family"
-              src="assets/images/family.png"
-              alt="family" />
-          </div>
+          <button class="join-btn" name="join now">
+            <a href="Contact.html"> JOIN NOW</a>
+          </button>
+
+          <img
+            class="img-family"
+            src="assets/images/family.webp"
+            alt="family" />
         </section>
         <section class="header-container">
           <div class="header-subcontainer subcontainer-orange">
-            <p class="subcontainer-paragraf">What do we have to offer?</p>
-            <h2 class="subcontainer-headline">Learn more</h2>
+            <a class="subcontainer-link" href="#">
+              <p class="subcontainer-paragraf">What do we have to offer?</p>
+              <h2 class="subcontainer-headline">Learn more</h2>
+            </a>
           </div>
           <div class="header-subcontainer subcontainer-yellow">
-            <p class="subcontainer-paragraf">What are you waiting for?</p>
-            <h2 class="subcontainer-headline">Join today?</h2>
+            <a class="subcontainer-link" href="Contact.html">
+              <p class="subcontainer-paragraf">What are you waiting for?</p>
+              <h2 class="subcontainer-headline">Join today?</h2>
+            </a>
           </div>
         </section>
       </div>
       <nav class="page-nav">
-        <ul class="nav-list">
-          <li class="list-item"><a href="#">Home</a></li>
-          <li class="list-item"><a href="#">Our offer</a></li>
-          <li class="list-item"><a href="#">Why us</a></li>
-          <li class="list-item"><a href="Contact.html">Contact</a></li>
+        <ul
+          class="nav-list"
+          itemscope
+          itemtype="https://schema.org/SiteNavigationElement">
+          <li itemprop="itemListElement" class="list-item">
+            <a href="#">Home</a>
+          </li>
+          <li itemprop="itemListElement" class="list-item">
+            <a href="#">Our offer</a>
+          </li>
+          <li itemprop="itemListElement" class="list-item">
+            <a href="#">Why us</a>
+          </li>
+          <li itemprop="itemListElement" class="list-item">
+            <a href="Contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -65,7 +92,9 @@
             <h2 class="headline info-title">
               Your personal financial safety net online.
             </h2>
-            <button class="info-join-btn">Join now</button>
+            <button class="info-join-btn">
+              <a href="Contact.html">JOIN NOW</a>
+            </button>
           </div>
           <p class="subheadline info-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor
@@ -79,10 +108,13 @@
         <div class="page-cards">
           <div class="card">
             <div class="card-img-container">
-              <img class="card-img" src="assets/images/child.png" alt="child" />
+              <img
+                class="card-img"
+                src="assets/images/child.webp"
+                alt="child" />
             </div>
             <h3 class="card-title">Children</h3>
-            <p class="subheadline card-text">
+            <p class="subheadline card-text" itemprop="review">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
               quibusdam minima iure, quam dolor, veniam sint perspiciatis error
               sequi magnam labore ipsa, repellendus molestiae eum quaerat rem
@@ -91,10 +123,13 @@
           </div>
           <div class="card">
             <div class="card-img-container">
-              <img class="card-img" src="assets/images/adult.png" alt="woman" />
+              <img
+                class="card-img"
+                src="assets/images/adult.webp"
+                alt="woman" />
             </div>
             <h3 class="card-title">Just right</h3>
-            <p class="subheadline card-text">
+            <p class="subheadline card-text" itemprop="review">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
               quibusdam minima iure, quam dolor, veniam sint perspiciatis error
               sequi magnam labore ipsa, repellendus molestiae eum quaerat rem
@@ -103,10 +138,13 @@
           </div>
           <div class="card">
             <div class="card-img-container">
-              <img class="card-img" src="assets/images/old.png" alt="old man" />
+              <img
+                class="card-img"
+                src="assets/images/old.webp"
+                alt="old man" />
             </div>
             <h3 class="card-title">Old fart</h3>
-            <p class="subheadline card-text">
+            <p class="subheadline card-text" itemprop="review">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
               quibusdam minima iure, quam dolor, veniam sint perspiciatis error
               sequi magnam labore ipsa, repellendus molestiae eum quaerat rem
@@ -114,7 +152,11 @@
             </p>
           </div>
         </div>
-        <article class="page-about-us">
+        <article
+          class="page-about-us"
+          itemscope
+          itemtype="https://schema.org/AboutPage"
+          itemprop="AboutPage">
           <h2 class="about-title headline">About us</h2>
           <p class="subheadline">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
@@ -173,7 +215,7 @@
       <footer class="page-footer">
         <button class="take-me-up" onclick="scrolling()">
           <p>^</p>
-          <p>Take me up again!</p>
+          <p class="subheadline">Take me up again!</p>
         </button>
         <script src="assets/scripts/scrollTop.js"></script>
       </footer>

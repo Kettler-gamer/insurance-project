@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Send a message to us using the form or find our place using the map." />
     <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -19,25 +23,59 @@
 
     <link rel="stylesheet" href="assets/stylesheet/main.css" />
   </head>
-  <body>
-    <header class="contact-page-header">
-      <div class="page-header-main">
+  <body itemscope itemtype="https://schema.org/ContactPage">
+    <header
+      class="contact-page-header"
+      itemscope
+      itemtype="https://schema.org/WPHeader">
+      <div
+        itemscope
+        itemtype="https://schema.org/Product"
+        class="page-header-main">
         <h2 class="contact-headline">Oh hello there!</h2>
         <img
+          itemprop="image"
           class="header-img"
-          src="assets/images/man-baby.png"
+          src="assets/images/man-baby.webp"
           alt="a man and a baby" />
       </div>
-      <nav class="contact-page-nav">
-        <ul class="nav-list">
-          <li class="list-item"><a href="index.html">Home</a></li>
-          <li class="list-item"><a href="#">Our offer</a></li>
-          <li class="list-item"><a href="#">Why us</a></li>
-          <li class="list-item"><a href="#">Contact</a></li>
+      <nav class="contact-page-nav" itemprop="mainEntity">
+        <ul
+          itemscope
+          itemtype="https://schema.org/BreadcrumbList"
+          class="nav-list">
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+            class="list-item">
+            <a itemprop="item" href="index.html">Home</a>
+          </li>
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+            class="list-item">
+            <a itemprop="item" href="#">Our offer</a>
+          </li>
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+            class="list-item">
+            <a itemprop="item" href="#">Why us</a>
+          </li>
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+            class="list-item">
+            <a itemprop="item" href="#">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <section class="page-content">
+    <section class="contact-page-content" itemprop="mainContentOfPage">
       <h2 class="headline">Whats on your mind?</h2>
       <form class="page-form">
         <label class="form-label" for="email">Your email</label>
@@ -52,13 +90,17 @@
         <button class="form-btn">SEND MESSAGE</button>
       </form>
       <div>
-        <div class="visit-card">
+        <div
+          itemscope
+          itemtype="https://schema.org/InsuranceAgency"
+          class="visit-card">
           <h2 class="headline">Come visit us!</h2>
-          <p class="card-text">2219 Griffin Street</p>
+          <p itemprop="address" class="card-text">2219 Griffin Street</p>
           <p class="card-text">San Francisco</p>
         </div>
         <iframe
           class="map-image"
+          title="google map of location"
           id="mapframe"
           width="300"
           height="500"

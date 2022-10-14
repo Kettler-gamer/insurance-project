@@ -11,14 +11,23 @@
 }
 
 .join-btn{
-    margin: 4em 1em 0em 1em;
+    margin: 4em 0em 0em 0em;
     background-color: #fff;
-    padding: 1.2em 4em;
+    padding: 1em 3em;
     border-radius: 9999px;
     box-shadow: .1em .1em .2em;
     border: none;
     
 }
+
+.join-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+   .join-btn:hover{
+    background-color: #FAB131;
+   }
 
 .img-family{
     margin-top: 3em;
@@ -36,13 +45,18 @@
     line-height: 3em;
 }
 
+.subcontainer-link{
+    text-decoration: none;
+}
+
+
 .subcontainer-orange{
-    background-color: rgba(255, 94, 0, 0.767);
+    background-color: $Corange;
     
 }
 
 .subcontainer-yellow{
-    background-color: orange;   
+    background-color: #FAB131;   
 }
 
 .page-nav{
@@ -56,7 +70,6 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         text-align: center;
         width: 100%;
-    
         list-style: none;
 
         .list-item{
@@ -67,12 +80,17 @@
             background-color: #fff;
             height: 4em;
             vertical-align: middle;
-            border: 2px solid #fff;
             a{
                 text-decoration: none;
                 margin: auto;
+                color: rgb(107, 107, 107);
             }
           }
+
+          .list-item:hover{
+            background-color: rgb(231, 231, 231);
+        }
+
           .list-item:active{
             background-color: lightgrey;
             color: black;
@@ -100,12 +118,14 @@
         margin-left: 0em;
     }
     
-    img{
+    .header-img{
         right: 0;
         position: absolute;
         margin-right: 1em;
     }
 }
+
+
 
 
 
@@ -119,17 +139,18 @@
         list-style: none;
         
         .list-item{
+            display: flex;
             justify-content: center;
             align-items: center;
             font-family: 'Fira Sans', sans-serif;
             font-weight: 600;
             color: rgb(107, 107, 107);
-            display: flex;
             background-color: #fff;
             height: 4em;
             vertical-align: middle;
             a{
                 text-decoration: none;
+                color: rgb(107, 107, 107);
             }
           }
           .list-item:active{
@@ -140,7 +161,7 @@
 }
 
 
-// Desktop Home page
+// Desktop Home page & Contact desktop
 
 @media screen and (min-width: 768px){
     
@@ -186,23 +207,73 @@
         }
     
         .subheadline{
-            width: 20em;
+            width: 19.5em;
             margin-left: 9em;
             word-wrap: break-word;
         }
-    
-        
 
         .join-btn{
+            position: relative;
             margin: 7em 1em 0em 17em;
             background-color: #fff;
             padding: 2em 6em;
             border-radius: 9999px;
             box-shadow: .1em .1em .2em;
             border: none;
+            z-index: 5;
+        }
+
+        .join-btn:hover{
+            background-color: $Cgrey;
         }
 
         .header-subcontainer{
             height: 24em;
+        }
+
+        .contact-page-header{
+            padding: 5em 0 0 0;
+        }
+
+        .page-header-main{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 0em;
+            margin-left: 8em;
+            .contact-headline{
+                margin-top: 0;
+                flex: 0 1 35%;
+            }
+    
+            .header-img {
+                position: static;
+                flex: 0 0 10%;
+                margin-left: 5em;
+            }
+        }
+
+        .contact-page-nav{
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+               flex-wrap: wrap;
+                justify-content: center;
+            .nav-list{
+                width: 80%;
+               display: flex;
+               flex-wrap: wrap;
+                justify-content: center;
+                .list-item{
+                    font-weight: 800;
+                    flex: 0 0 20%;
+                }
+
+                .list-item:hover{
+                    background-color: rgb(231, 231, 231);
+                }
+            }
         }
 }
