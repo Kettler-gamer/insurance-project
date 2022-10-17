@@ -10,6 +10,11 @@
         padding-top: 0.5em;
         margin-bottom: 0.5em;
     }
+    
+    .headline:first-child{
+        animation-name: fade-in;
+        animation-duration: 1.5s;
+    }
 
     .page-form{
         display: flex;
@@ -17,11 +22,14 @@
         flex-wrap: wrap;
         width: 90%;
         padding-bottom: 6em;
+        animation-name: fade-in;
+        animation-duration: 2s;
 
         .form-label{
             color: #e6e6e6;
             margin: 0.5em auto 0.5em 0.5em;
             text-transform: uppercase;
+            border-bottom: 1px solid #e6e6e6;;
         }
 
         .form-input{
@@ -38,10 +46,20 @@
             padding: 1em 2em;
             border-radius: 20em;
             border: none;
-            box-shadow: 0 0 5px grey;
+            box-shadow: 0 0 10px grey;
             margin: 2em 0 2em auto;
             cursor: pointer;
+            outline: none;
+            transition: ease-out .5s;
+            
+        
         }
+        .form-btn:hover{
+            background-color: $Cyellow;
+            color: black;
+            scale: 1.2;
+        }
+        
     }
 
     .visit-card{
@@ -49,9 +67,11 @@
         background-color: $Cyellow;
         color: #fff;
         padding-bottom: 3em;
-       margin: -6em auto 0 auto; 
+        margin: -6em auto 0 auto; 
         width: 90%;
         z-index: 5;
+        animation-name: fade-in;
+        animation-duration: 2.5s;
 
         .headline{
             width: 100%;
@@ -71,6 +91,9 @@
         width: 100%;
         height: 25em;
         border: none;
+        animation-name: fade-in;
+        animation-duration: 2.5s;
+        
     }
 
     .map-btn{
@@ -81,6 +104,15 @@
             box-shadow: 0 0 5px grey;
             margin: 2em auto 2em auto;
             cursor: pointer;
+            outline: none;
+            transition: ease-out .5s;
+
+            
+    }
+    .map-btn:hover{
+        background-color:$Cyellow;
+        color: black;
+        scale: 1.2;
     }
 
     .form-btn:active{
@@ -89,6 +121,11 @@
 }
 
 @media screen and (min-width:768px) {
+
+
+   
+
+   
     .contact-page-content{
         display: flex;
         flex-wrap: wrap;

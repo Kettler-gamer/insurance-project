@@ -27,6 +27,7 @@
 
 .subcontainer-paragraf{
     font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
     font-size: .8rem;
     color: rgba(61, 22, 0, 0.767) ;
 }
@@ -66,4 +67,8 @@
         color: rgba(54, 54, 54, 0.781);
     }
 
+
+    .subcontainer-paragraf{
+        font-size: 1rem;
+    }
 }

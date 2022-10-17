@@ -33,6 +33,10 @@
 
 .page-about-us {
   background-color: #FAB131;
+  -webkit-animation-name: fade-in-top;
+          animation-name: fade-in-top;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .page-cards,
@@ -114,6 +118,7 @@
   text-align: center;
   margin: 1em auto 2em auto;
   width: 70%;
+  color: rgb(66, 66, 66);
 }
 .page-boxes .box:first-child {
   background-color: #C7DDEA;
@@ -155,7 +160,7 @@
     width: 100%;
   }
   .page-wrapper .page-info {
-    background-image: linear-gradient(to bottom, grey 0%, grey 49.9%, orange 50%, orange 100%);
+    background-image: linear-gradient(to bottom, #A9A19E 0%, #A9A19E 49.9%, #FAB131 50%, #FAB131 100%);
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -166,6 +171,10 @@
     display: flex;
     width: 100%;
     margin: 5em auto 0 auto;
+    -webkit-animation-name: fade-in;
+            animation-name: fade-in;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
   }
   .page-wrapper .page-info .info-header .info-container {
     margin: 5em auto 2em 15%;
@@ -182,19 +191,23 @@
     width: fit-content;
     background-color: #fff;
     margin: 6em 0 0 1.5em;
-    padding: 1.2em 4em;
+    padding: 1.5em 5em;
     border-radius: 9999px;
     box-shadow: 0.1em 0.1em 0.2em;
     border: none;
+    font-size: 0.8rem;
     font-family: "Fira Sans", sans-serif;
+    font-weight: 800;
+    transition: ease-out 0.5s;
   }
   .page-wrapper .page-info .info-header .info-container .info-join-btn:hover {
-    background-color: #A9A19E;
+    background-color: #FAB131;
+    scale: 1.2;
   }
   .page-wrapper .page-info .info-header .info-text {
-    flex: 0 0 30%;
+    flex: 0 0 21%;
     font-size: 1rem;
-    margin: 5.5em 15% 2em auto;
+    margin: 5.5em 18% 2em auto;
     height: 278px;
   }
   .page-wrapper .page-info .page-cards {
@@ -212,6 +225,10 @@
     height: fit-content;
     align-self: center;
     margin: 0em 0.5em;
+    -webkit-animation-name: fade-in;
+            animation-name: fade-in;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
   }
   .page-wrapper .page-info .page-cards .card .card-img-container {
     height: 13em;
@@ -286,17 +303,28 @@
   padding-top: 0.5em;
   margin-bottom: 0.5em;
 }
+.contact-page-content .headline:first-child {
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
 .contact-page-content .page-form {
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
   width: 90%;
   padding-bottom: 6em;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 .contact-page-content .page-form .form-label {
   color: #e6e6e6;
   margin: 0.5em auto 0.5em 0.5em;
   text-transform: uppercase;
+  border-bottom: 1px solid #e6e6e6;
 }
 .contact-page-content .page-form .form-input {
   width: 100%;
@@ -309,9 +337,16 @@
   padding: 1em 2em;
   border-radius: 20em;
   border: none;
-  box-shadow: 0 0 5px grey;
+  box-shadow: 0 0 10px grey;
   margin: 2em 0 2em auto;
   cursor: pointer;
+  outline: none;
+  transition: ease-out 0.5s;
+}
+.contact-page-content .page-form .form-btn:hover {
+  background-color: #FAB131;
+  color: black;
+  scale: 1.2;
 }
 .contact-page-content .visit-card {
   position: relative;
@@ -321,6 +356,10 @@
   margin: -6em auto 0 auto;
   width: 90%;
   z-index: 5;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 .contact-page-content .visit-card .headline {
   width: 100%;
@@ -338,6 +377,10 @@
   width: 100%;
   height: 25em;
   border: none;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 .contact-page-content .map-btn {
   display: block;
@@ -347,6 +390,13 @@
   box-shadow: 0 0 5px grey;
   margin: 2em auto 2em auto;
   cursor: pointer;
+  outline: none;
+  transition: ease-out 0.5s;
+}
+.contact-page-content .map-btn:hover {
+  background-color: #FAB131;
+  color: black;
+  scale: 1.2;
 }
 .contact-page-content .form-btn:active {
   box-shadow: 0 0 0 2px;
@@ -400,13 +450,89 @@
   padding-top: 5em;
 }
 
+.header-container:first-child {
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.header-subcontainer:first-child .subcontainer-link {
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.header-subcontainer:last-child .subcontainer-link {
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-75px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-75px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes fade-in-top {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-75px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-75px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 .join-btn {
-  margin: 4em 0em 0em 0em;
+  margin: 4em 0em 0em 0.67em;
   background-color: #fff;
   padding: 1em 3em;
   border-radius: 9999px;
   box-shadow: 0.1em 0.1em 0.2em;
   border: none;
+  transition: ease-out 0.5s;
+  outline: none;
 }
 
 .join-btn a {
@@ -416,6 +542,7 @@
 
 .join-btn:hover {
   background-color: #FAB131;
+  scale: 1.1;
 }
 
 .img-family {
@@ -431,7 +558,7 @@
   justify-content: center;
   height: 20em;
   flex-direction: column;
-  line-height: 3em;
+  line-height: 2.5em;
 }
 
 .subcontainer-link {
@@ -444,6 +571,53 @@
 
 .subcontainer-yellow {
   background-color: #FAB131;
+}
+
+.nav-list .list-item:nth-child(1) a,
+.nav-list .list-item:nth-child(2) a,
+.nav-list .list-item:nth-child(3) a,
+.nav-list .list-item:nth-child(4) a {
+  opacity: 0;
+  -webkit-animation-name: pop-up;
+          animation-name: pop-up;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.nav-list .list-item:nth-child(2) a {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+.nav-list .list-item:nth-child(3) a {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+.nav-list .list-item:nth-child(4) a {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@-webkit-keyframes pop-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes pop-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .page-nav {
@@ -475,6 +649,7 @@
 }
 .page-nav .nav-list .list-item:hover {
   background-color: rgb(231, 231, 231);
+  transition: ease-out 0.3s;
 }
 .page-nav .nav-list .list-item:active {
   background-color: lightgrey;
@@ -490,8 +665,13 @@
   padding-top: 2em;
   display: flex;
   height: 20em;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 .page-header-main .contact-headline {
+  font-size: 3rem;
   width: 4em;
   margin-top: 1.5em;
   margin-left: 0em;
@@ -581,9 +761,6 @@
     border: none;
     z-index: 5;
   }
-  .join-btn:hover {
-    background-color: #A9A19E;
-  }
   .header-subcontainer {
     height: 24em;
   }
@@ -622,11 +799,12 @@
     justify-content: center;
   }
   .contact-page-nav .nav-list .list-item {
-    font-weight: 800;
+    font-weight: 600;
     flex: 0 0 20%;
   }
   .contact-page-nav .nav-list .list-item:hover {
     background-color: rgb(231, 231, 231);
+    transition: ease-out 0.3s;
   }
 }
 .headline {
@@ -655,6 +833,7 @@
 
 .subcontainer-paragraf {
   font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
   font-size: 0.8rem;
   color: rgba(61, 22, 0, 0.767);
 }
@@ -685,6 +864,9 @@
     font-family: "Fira Sans", sans-serif;
     font-weight: 600;
     color: rgba(54, 54, 54, 0.781);
+  }
+  .subcontainer-paragraf {
+    font-size: 1rem;
   }
 }
 * {

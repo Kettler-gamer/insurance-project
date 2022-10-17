@@ -40,6 +40,8 @@
 
 .page-about-us{
     background-color: $Cyellow;
+    animation-name: fade-in-top;
+    animation-duration: 3s;
 }
 
 .page-cards,
@@ -124,6 +126,7 @@
             text-align: center;
             margin: 1em auto 2em auto;
             width: 70%;
+            color: rgb(66, 66, 66);
         }
     }
     
@@ -172,7 +175,7 @@
     .page-wrapper{
         width: 100%;
         .page-info{
-            background-image: linear-gradient(to bottom, grey 0%, grey 49.9%,orange 50%, orange 100%);
+            background-image: linear-gradient(to bottom, $Cgrey 0%, $Cgrey 49.9%,$Cyellow 50%, $Cyellow 100%);
             width: 100%;
             margin: 0 auto;
             display: flex;
@@ -182,6 +185,9 @@
                 display: flex;
                 width: 100%;
                 margin: 5em auto 0 auto;
+
+                animation-name: fade-in;
+                animation-duration: 3s;
                 
                 .info-container{
                     margin: 5em auto 2em 15%;
@@ -196,22 +202,27 @@
                         width: fit-content;
                         background-color: #fff;
                         margin: 6em 0 0 1.5em;
-                        padding: 1.2em 4em;
+                        padding: 1.5em 5em;
                         border-radius: 9999px;
                         box-shadow: .1em .1em .2em;
                         border: none;
+                        font-size: .8rem;
                         font-family: 'Fira Sans', sans-serif;
-                        
+                        font-weight: 800;
+                        transition: ease-out .5s;
                     }
                     .info-join-btn:hover{
-                        background-color: $Cgrey;
+                        background-color: $Cyellow;
+                        scale: 1.2;
                     }
+
+                
                 }
                 
                 .info-text{
-                    flex: 0 0 30%;
+                    flex: 0 0 21%;
                     font-size: 1rem;
-                    margin: 5.5em 15% 2em auto;
+                    margin: 5.5em 18% 2em auto;
                     height: 278px;
                 }
             }
@@ -228,6 +239,8 @@
                     height: fit-content;
                     align-self: center;
                     margin: 0em 0.5em;
+                    animation-name: fade-in;
+                    animation-duration: 4s;
 
                     .card-img-container{
                         height: 13em;
@@ -245,6 +258,7 @@
                         margin: 0 auto 3em auto;
                     }
                 }
+                
                 .card:nth-child(3){
                     .card-img-container{
                         .card-img{

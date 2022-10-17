@@ -10,14 +10,42 @@
     padding-top: 5em;
 }
 
+.header-container:first-child{
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+.header-subcontainer:first-child .subcontainer-link{
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+.header-subcontainer:last-child .subcontainer-link{
+    animation-name: fade-in;
+    animation-duration: 3s;
+}
+
+@keyframes fade-in {
+    0%{opacity: 0;}
+    50%{opacity: 0; transform: translateX(-75px);}
+    100%{opacity: 1; transform: translateX(0px);}
+}
+
+@keyframes fade-in-top{
+    0%{opacity: 0;}
+    50%{ opacity: 0; transform: translateY(-75px);}
+    100%{ opacity: 1; transform: translateX(0px);}
+}
+
 .join-btn{
-    margin: 4em 0em 0em 0em;
+    margin: 4em 0em 0em 0.67em;
     background-color: #fff;
     padding: 1em 3em;
     border-radius: 9999px;
     box-shadow: .1em .1em .2em;
     border: none;
-    
+    transition: ease-out .5s;
+    outline: none;
 }
 
 .join-btn a {
@@ -26,7 +54,8 @@
 }
 
    .join-btn:hover{
-    background-color: #FAB131;
+    background-color:$Cyellow;
+    scale: 1.1;
    }
 
 .img-family{
@@ -42,7 +71,7 @@
     justify-content: center;
     height: 20em;
     flex-direction: column;
-    line-height: 3em;
+    line-height: 2.5em;
 }
 
 .subcontainer-link{
@@ -56,7 +85,36 @@
 }
 
 .subcontainer-yellow{
-    background-color: #FAB131;   
+    background-color: $Cyellow;   
+}
+
+.nav-list{
+    .list-item:nth-child(1) a,
+    .list-item:nth-child(2) a,
+    .list-item:nth-child(3) a,
+    .list-item:nth-child(4) a{
+        opacity: 0;
+        animation-name: pop-up;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+    }
+
+    .list-item:nth-child(2) a{
+        animation-delay: 0.25s;
+    }
+    .list-item:nth-child(3) a{
+        animation-delay: 0.75s;
+    }
+    .list-item:nth-child(4) a{
+        animation-delay: 1s;
+        
+    }
+
+    @keyframes pop-up {
+        from{opacity: 0; transform: translateY(10px);}
+        to{opacity: 1; transform: translateY(0);}
+    }
 }
 
 .page-nav{
@@ -85,10 +143,11 @@
                 margin: auto;
                 color: rgb(107, 107, 107);
             }
-          }
+        }
 
-          .list-item:hover{
+        .list-item:hover{
             background-color: rgb(231, 231, 231);
+            transition: ease-out .3s;
         }
 
           .list-item:active{
@@ -111,8 +170,11 @@
     padding-top: 2em ;
     display: flex;
     height: 20em;
+    animation-name: fade-in;
+    animation-duration: 1s;
 
     .contact-headline{
+        font-size: 3rem;
        width: 4em;
         margin-top: 1.5em;
         margin-left: 0em;
@@ -223,10 +285,6 @@
             z-index: 5;
         }
 
-        .join-btn:hover{
-            background-color: $Cgrey;
-        }
-
         .header-subcontainer{
             height: 24em;
         }
@@ -266,13 +324,15 @@
                display: flex;
                flex-wrap: wrap;
                 justify-content: center;
+                
                 .list-item{
-                    font-weight: 800;
+                    font-weight: 600;
                     flex: 0 0 20%;
                 }
 
                 .list-item:hover{
                     background-color: rgb(231, 231, 231);
+                    transition: ease-out .3s;
                 }
             }
         }
