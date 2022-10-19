@@ -53,11 +53,7 @@
     color: black;
 }
 
-   .join-btn:hover{
-    background-color:$Cyellow;
-    scale: 1.1;
-   }
-
+  
 .img-family{
     margin-top: 3em;
     margin-bottom: -.3em;
@@ -97,17 +93,17 @@
         animation-name: pop-up;
         animation-direction: normal;
         animation-fill-mode: forwards;
-        animation-duration: 1s;
+        animation-duration: 0.75s;
     }
 
     .list-item:nth-child(2) a{
         animation-delay: 0.25s;
     }
     .list-item:nth-child(3) a{
-        animation-delay: 0.75s;
+        animation-delay: 0.5s;
     }
     .list-item:nth-child(4) a{
-        animation-delay: 1s;
+        animation-delay: 0.75s;
         
     }
 
@@ -171,7 +167,7 @@
     display: flex;
     height: 20em;
     animation-name: fade-in;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 
     .contact-headline{
         font-size: 3rem;
@@ -262,6 +258,7 @@
         }
     }
     
+    
         .headline{
             margin-top: 1.2em;
             margin-left: 2.5em;
@@ -284,6 +281,12 @@
             border: none;
             z-index: 5;
         }
+
+        .join-btn:hover{
+            background-color:$Cyellow;
+            scale: 1.1;
+           }
+        
 
         .header-subcontainer{
             height: 24em;

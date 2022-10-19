@@ -9,11 +9,12 @@
         color: #fff;
         padding-top: 0.5em;
         margin-bottom: 0.5em;
+        height: fit-content;
     }
     
     .headline:first-child{
         animation-name: fade-in;
-        animation-duration: 1.5s;
+        animation-duration: 0.25s;
     }
 
     .page-form{
@@ -23,7 +24,7 @@
         width: 90%;
         padding-bottom: 6em;
         animation-name: fade-in;
-        animation-duration: 2s;
+        animation-duration: 0.75s;
 
         .form-label{
             color: #e6e6e6;
@@ -51,13 +52,6 @@
             cursor: pointer;
             outline: none;
             transition: ease-out .5s;
-            
-        
-        }
-        .form-btn:hover{
-            background-color: $Cyellow;
-            color: black;
-            scale: 1.2;
         }
         
     }
@@ -71,7 +65,7 @@
         width: 90%;
         z-index: 5;
         animation-name: fade-in;
-        animation-duration: 2.5s;
+        animation-duration: 0.75s;
 
         .headline{
             width: 100%;
@@ -92,7 +86,7 @@
         height: 25em;
         border: none;
         animation-name: fade-in;
-        animation-duration: 2.5s;
+        animation-duration: 0.75s;
         
     }
 
@@ -109,11 +103,7 @@
 
             
     }
-    .map-btn:hover{
-        background-color:$Cyellow;
-        color: black;
-        scale: 1.2;
-    }
+  
 
     .form-btn:active{
         box-shadow: 0 0 0 2px;
@@ -121,11 +111,6 @@
 }
 
 @media screen and (min-width:768px) {
-
-
-   
-
-   
     .contact-page-content{
         display: flex;
         flex-wrap: wrap;
@@ -141,6 +126,12 @@
             margin: 0 10em 0 0;
             .form-input:nth-child(4){
                 height: 12em;
+            }
+
+            .form-btn:hover{
+                background-color: $Cyellow;
+                color: black;
+                scale: 1.2;
             }
         }
 
@@ -161,6 +152,13 @@
                 margin: -18em 0 0 0;
                 height: 30em;
             }
+            
+        }
+
+        .map-btn:hover{
+            background-color:$Cyellow;
+            color: black;
+            scale: 1.2;
         }
     }
 }

@@ -35,8 +35,8 @@
   background-color: #FAB131;
   -webkit-animation-name: fade-in-top;
           animation-name: fade-in-top;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 0.5;
+          animation-duration: 0.5;
 }
 
 .page-cards,
@@ -302,12 +302,15 @@
   color: #fff;
   padding-top: 0.5em;
   margin-bottom: 0.5em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .contact-page-content .headline:first-child {
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
 }
 .contact-page-content .page-form {
   display: flex;
@@ -317,8 +320,8 @@
   padding-bottom: 6em;
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
 }
 .contact-page-content .page-form .form-label {
   color: #e6e6e6;
@@ -343,11 +346,6 @@
   outline: none;
   transition: ease-out 0.5s;
 }
-.contact-page-content .page-form .form-btn:hover {
-  background-color: #FAB131;
-  color: black;
-  scale: 1.2;
-}
 .contact-page-content .visit-card {
   position: relative;
   background-color: #FAB131;
@@ -358,8 +356,8 @@
   z-index: 5;
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
 }
 .contact-page-content .visit-card .headline {
   width: 100%;
@@ -379,8 +377,8 @@
   border: none;
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
 }
 .contact-page-content .map-btn {
   display: block;
@@ -392,11 +390,6 @@
   cursor: pointer;
   outline: none;
   transition: ease-out 0.5s;
-}
-.contact-page-content .map-btn:hover {
-  background-color: #FAB131;
-  color: black;
-  scale: 1.2;
 }
 .contact-page-content .form-btn:active {
   box-shadow: 0 0 0 2px;
@@ -420,6 +413,11 @@
   .contact-page-content .page-form .form-input:nth-child(4) {
     height: 12em;
   }
+  .contact-page-content .page-form .form-btn:hover {
+    background-color: #FAB131;
+    color: black;
+    scale: 1.2;
+  }
   .contact-page-content div {
     width: 100%;
   }
@@ -439,6 +437,11 @@
   .contact-page-content div .map-image {
     margin: -18em 0 0 0;
     height: 30em;
+  }
+  .contact-page-content .map-btn:hover {
+    background-color: #FAB131;
+    color: black;
+    scale: 1.2;
   }
 }
 .page-header {
@@ -540,11 +543,6 @@
   color: black;
 }
 
-.join-btn:hover {
-  background-color: #FAB131;
-  scale: 1.1;
-}
-
 .img-family {
   margin-top: 3em;
   margin-bottom: -0.3em;
@@ -584,20 +582,20 @@
           animation-direction: normal;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
 }
 .nav-list .list-item:nth-child(2) a {
   -webkit-animation-delay: 0.25s;
           animation-delay: 0.25s;
 }
 .nav-list .list-item:nth-child(3) a {
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 .nav-list .list-item:nth-child(4) a {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
 }
 @-webkit-keyframes pop-up {
   from {
@@ -667,8 +665,8 @@
   height: 20em;
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 .page-header-main .contact-headline {
   font-size: 3rem;
@@ -760,6 +758,10 @@
     box-shadow: 0.1em 0.1em 0.2em;
     border: none;
     z-index: 5;
+  }
+  .join-btn:hover {
+    background-color: #FAB131;
+    scale: 1.1;
   }
   .header-subcontainer {
     height: 24em;
