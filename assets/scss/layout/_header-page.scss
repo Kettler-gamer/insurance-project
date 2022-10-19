@@ -26,14 +26,12 @@
 }
 
 @keyframes fade-in {
-    0%{opacity: 0;}
-    50%{opacity: 0; transform: translateX(-75px);}
+    0%{opacity: 0; transform: translateX(-75px);}
     100%{opacity: 1; transform: translateX(0px);}
 }
 
 @keyframes fade-in-top{
-    0%{opacity: 0;}
-    50%{ opacity: 0; transform: translateY(-75px);}
+    0%{ opacity: 0; transform: translateY(-75px);}
     100%{ opacity: 1; transform: translateX(0px);}
 }
 
