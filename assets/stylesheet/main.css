@@ -835,7 +835,7 @@
   font-size: 0.85rem;
   letter-spacing: 0.02em;
   line-height: 1.7em;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", sans-serif, Arial, Helvetica;
   color: rgba(54, 54, 54, 0.781);
 }
 
@@ -845,12 +845,12 @@
 
 .join-btn {
   font-size: 0.8rem;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-weight: 800;
 }
 
 .subcontainer-paragraf {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 0.8rem;
   color: rgba(61, 22, 0, 0.767);
