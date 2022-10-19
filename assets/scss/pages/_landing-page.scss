@@ -40,8 +40,11 @@
 
 .page-about-us{
     background-color: $Cyellow;
+    opacity: 0;
     animation-name: fade-in-top;
-    animation-duration: .5;
+    animation-fill-mode: forwards;
+    animation-delay: 0.75s;
+    animation-duration: 1.5s;
 }
 
 .page-cards,

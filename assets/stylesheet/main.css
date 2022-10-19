@@ -33,10 +33,15 @@
 
 .page-about-us {
   background-color: #FAB131;
+  opacity: 0;
   -webkit-animation-name: fade-in-top;
           animation-name: fade-in-top;
-  -webkit-animation-duration: 0.5;
-          animation-duration: 0.5;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 .page-cards,
@@ -665,8 +670,7 @@
 .contact-page-header {
   background-color: #C7DDEA;
 }
-
-.page-header-main {
+.contact-page-header .page-header-main {
   position: relative;
   padding-top: 2em;
   display: flex;
@@ -676,13 +680,13 @@
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
 }
-.page-header-main .contact-headline {
+.contact-page-header .page-header-main .contact-headline {
   font-size: 3rem;
   width: 4em;
   margin-top: 1.5em;
   margin-left: 0em;
 }
-.page-header-main .header-img {
+.contact-page-header .page-header-main .header-img {
   right: 0;
   position: absolute;
   margin-right: 0.3em;
@@ -759,9 +763,9 @@
   }
   .join-btn {
     position: relative;
-    margin: 7em 1em 0em 17em;
+    margin: 5em 1em 0em 15em;
     background-color: #fff;
-    padding: 2em 6em;
+    padding: 1.8em 6em;
     border-radius: 9999px;
     box-shadow: 0.1em 0.1em 0.2em;
     border: none;
@@ -784,16 +788,17 @@
     align-items: center;
     text-align: center;
     padding-top: 0em;
-    margin-left: 8em;
   }
   .page-header-main .contact-headline {
     margin-top: 0;
+    padding-bottom: 2em;
     flex: 0 1 35%;
+    margin-right: -5em;
   }
   .page-header-main .header-img {
     position: static;
     flex: 0 0 10%;
-    margin-left: 5em;
+    margin-left: 15em;
   }
   .contact-page-nav {
     width: 100%;
@@ -815,6 +820,9 @@
   .contact-page-nav .nav-list .list-item:hover {
     background-color: rgb(231, 231, 231);
     transition: ease-out 0.3s;
+  }
+  .contact-page-header .page-header-main .header-img {
+    position: static;
   }
 }
 .headline {
@@ -854,7 +862,6 @@
 }
 
 .contact-headline {
-  font-size: 3.5rem;
   margin-top: 1.5em;
   font-weight: 800;
   width: 4em;
